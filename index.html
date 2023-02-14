@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task</title>
+    <!-- FontAwesome Css CDN Link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Tailwind CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <!-- header area starts -->
+        <header>
+            <div class="w-full max-w-2xl mx-auto">
+                <h1 class="text-4xl text-center py-4 font-medium">JS Task</h1>
+            </div>
+        </header>
+    <!-- header area Ends -->
+
+
+    <!-- main area Starts -->
+
+        <main>
+            <section>
+                <h3 class="text-center text-xl text-cyan-800 font-medium">Click Apply TO Get The Discount</h3>
+                <div class="flex flex-col md:flex-row gap-3 justify-evenly max-w-4xl mx-auto py-4 w-full">
+                    <div class="bg-blue-500 px-3 py-2 rounded">
+                        <div>
+                            <img class="w-12 h-12 rounded-full" src="https://www.kablewala.com.bd/images/detailed/229/dfed8b015674e06d588d6d17db3dfa92.jpeg" alt="denim shirt">
+                        </div>
+                        <div class="flex gap-3 items-center justify-between my-2 text-white text-xl">
+                            
+                            <h3>
+                                Denim Shirt 2023 - New Edition
+                            </h3>
+
+                            <h3 class="text-4xl">$
+                                <span class="pl-2" id="current-price-one">135</span>
+                            </h3>
+                        </div>
+
+                        <div class="flex justify-between text-lg text-white">
+                            <div class="mt-2">
+                                <span class="block mb-2">Apply For 30% Discount</span>
+                                <button class="bg-orange-500 px-5 py-1 rounded" id="apply-btn-one">
+                                    Apply
+                                </button>
+                            </div>
+                            <h3 class="mt-2 text-4xl">
+                                    $ <span id="discOne">
+                                         0.00
+                                    </span>                      
+                            </h3>
+                        </div>
+
+                        <div class="flex items-center justify-between text-lg text-white">
+                            <span>
+                                Please Pay
+                            </span>
+                            <h3 class="text-4xl">$
+                                <span class="pl-2" id="current-total-one">100</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="bg-blue-500 px-3 py-2 rounded">
+                        <div class="flex justify-between">
+                            
+                            <img class="w-12 h-12 rounded-full" src="https://www.kablewala.com.bd/images/detailed/229/dfed8b015674e06d588d6d17db3dfa92.jpeg" alt="denim shirt">
+
+                            <input type="text" name="coupon-code" id="coupon-code" class="bg-yellow-200 px-2 rounded" placeholder="Enter The Coupon Code">
+                        </div>
+                        <div class="flex gap-3 items-center justify-between my-2 text-white text-xl">
+                            
+                            <h3 class="">
+                                Denim Shirt 2023 - New Edition
+                            </h3>
+
+                            <h3 class="text-4xl">$
+                                <span class="pl-2" id="current-price-two">185</span>
+                            </h3>
+                        </div>
+
+                        <div class="text-lg text-white">
+                            <div class="mb-2">
+                                <div class="flex justify-between mb-2">  
+                                    <span class="block w-60">
+                                        Apply For 50% Discount With The Coupon Code
+                                    </span>
+                                    <h3 class="mt-2 text-4xl">
+                                        $ <span id="discTwo">
+                                            0.00
+                                        </span>                      
+                                    </h3>
+                                </div>
+                                <div class="">
+                                    <button class="bg-orange-500 px-5 py-1 rounded" id="apply-btn-two">
+                                        Apply
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between text-lg text-white">
+                            <span>
+                                Please Pay
+                            </span>
+                            <h3 class="text-4xl">$
+                                <span class="pl-2" id="current-total-two">100</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="bg-blue-500 w-full max-w-4xl mx-auto px-4 py-2 rounded">
+                    <div class="flex justify-between items-center my-2 text-white">
+                        <div class="flex gap-3 items-center ">
+                            <div id="bold-icon">
+                                <i class="cursor-pointer text-lg fa-solid fa-bold"></i>
+                            </div>
+                            <div id="italic-icon">
+                                <i class="cursor-pointer text-lg fa-solid fa-italic"></i>
+                            </div>
+                            <div id="underline-icon">
+                                <i class="cursor-pointer text-lg fa-solid fa-underline"></i>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <div id="left-align-icon">
+                                <i class="cursor-pointer text-lg fa-solid fa-align-left"></i>
+                            </div>
+                            <div id="center-align-icon">
+                                <i class="cursor-pointer text-lg fa-solid fa-align-center"></i>
+                            </div>
+                            <div id="right-align-icon">
+                                <i class="cursor-pointer text-lg fa-solid fa-align-right" ></i>
+                            </div>
+                            <div id="justify-icon">
+                                <i class="cursor-pointer text-lg fa-solid fa-align-justify"></i>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <div>
+                                <input class="w-12 text-right text-black" type="number" name="fontSize" id="fontSize" placeholder="16"min="16">
+                            </div>
+                            <div>
+                                <input class="h-6 w-8 cursor-pointer" type="color" name="fontColor" id="fontColor">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <textarea class="w-full p-2" name="text-field" id="text-field" cols="30" rows="12"></textarea>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+    <!-- main area Ends -->
+        
+        
+
+        <!-- FontAwesome JS CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+        <!-- Custom JS Links -->
+        <script src="js/utilities.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
